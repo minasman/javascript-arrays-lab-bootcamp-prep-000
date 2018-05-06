@@ -34,8 +34,8 @@ function prependKitten(name){
 }
 
 function removeLastKitten(){
-  var newArr = kittens.indexOf(function(val){
-    return kittens.filter(val) !== kittens.length - 1;
+  var newArr = kittens.filter(function(val){
+    return kittens.indexOf(val) !== kittens.length - 1;
   });
   return newArr;
 }
