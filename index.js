@@ -34,15 +34,15 @@ function prependKitten(name){
 }
 
 function removeLastKitten(){
-  var newArr = kittens.filter(function(val){
-    kittens.indexOf[val] !== kittens.length - 1;
+  var newArr = kittens.indexOf(function(val){
+    return kittens.indexOf[val] !== kittens.length - 1;
   });
   return newArr;
 }
 
 function removeFirstKitten(){
   var newArr = kittens.filter(function(val){
-    kittens.inexOf[val] !== 0;
+   return kittens.indexOf[val] !== 0;
   });
   return newArr;
 }
